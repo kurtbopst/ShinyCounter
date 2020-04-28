@@ -1,0 +1,109 @@
+﻿@model ShinyCounter.Models.Profile
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Profile</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="username" class="control-label"></label>
+                <input asp-for="username" class="form-control" />
+                <span asp-validation-for="username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="password" class="control-label"></label>
+                <input asp-for="password" class="form-control" />
+                <span asp-validation-for="password" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="caught1" /> @Html.DisplayNameFor(model => model.caught1)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="caught2" /> @Html.DisplayNameFor(model => model.caught2)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="caught3" /> @Html.DisplayNameFor(model => model.caught3)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="caught4" /> @Html.DisplayNameFor(model => model.caught4)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="caught5" /> @Html.DisplayNameFor(model => model.caught5)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="caught6" /> @Html.DisplayNameFor(model => model.caught6)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="caught7" /> @Html.DisplayNameFor(model => model.caught7)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="caught8" /> @Html.DisplayNameFor(model => model.caught8)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="caught9" /> @Html.DisplayNameFor(model => model.caught9)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="caught10" /> @Html.DisplayNameFor(model => model.caught10)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="caught11" /> @Html.DisplayNameFor(model => model.caught11)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="caught12" /> @Html.DisplayNameFor(model => model.caught12)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="goal" class="control-label"></label>
+                <input asp-for="goal" class="form-control" />
+                <span asp-validation-for="goal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="counter" class="control-label"></label>
+                <input asp-for="counter" class="form-control" />
+                <span asp-validation-for="counter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

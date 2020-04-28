@@ -1,0 +1,114 @@
+﻿@model ShinyCounter.Models.Profile
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Profile</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.username)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.username)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.password)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.caught1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.caught1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.caught2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.caught2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.caught3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.caught3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.caught4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.caught4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.caught5)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.caught5)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.caught6)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.caught6)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.caught7)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.caught7)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.caught8)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.caught8)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.caught9)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.caught9)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.caught10)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.caught10)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.caught11)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.caught11)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.caught12)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.caught12)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.goal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.goal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.counter)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.counter)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

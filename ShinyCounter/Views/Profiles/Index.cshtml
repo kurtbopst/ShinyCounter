@@ -1,0 +1,125 @@
+﻿@model IEnumerable<ShinyCounter.Models.Profile>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caught1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caught2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caught3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caught4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caught5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caught6)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caught7)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caught8)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caught9)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caught10)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caught11)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.caught12)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.goal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.counter)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.caught1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.caught2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.caught3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.caught4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.caught5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.caught6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.caught7)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.caught8)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.caught9)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.caught10)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.caught11)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.caught12)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.goal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.counter)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
